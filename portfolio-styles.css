@@ -73,19 +73,32 @@ html {
 
 .navbar-item {
     display: inline-block;
-    padding: 0px 15px 0px 15px;
+    padding: 0px;
     border-radius: 4px;
+}
+
+.navbar-item a {
+    padding: 2px 17px 2px 17px;
 }
 
 .navbar-arrow {
     display: inline-block;
     padding: 0px 15px 0px 15px;
     border-radius: 4px;
+    color: var(--font-color);
 }
  
 .navbar-item:hover {
     background-color: var(--navhover-bg-color);
     color: var(--navhover-color);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.navbar-item:not(hover) {
+    background-color: var(--background-color);
+    color: var(--font-color);
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
@@ -98,10 +111,20 @@ html {
     transition: all 150ms ease-in-out;
 }
 
+.navbar-item a:not(hover) {
+    color: var(--font-color);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
 /* Active Breadcrumb*/
-.active {
+.navbar-item-active {
+    display: inline-block;
     background-color: var(--navhover-bg-color);
-    color: var(--navhover-color)
+    color: var(--navhover-color);
+    padding: 0px 15px;
+    border-radius: 4px;
 }
 
 /*Color Change Icons*/
@@ -271,8 +294,29 @@ ul li:not(:last-child) {
     margin-top: 40px;
 }
 
+.project-thumbnails-container:hover a {
+    opacity: 0.7;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+
+.project-thumbnails-container:not(hover) a {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+
 .project-thumbnails {
     width: 100%;
+}
+
+.project-thumbnails-container a:hover {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
 
 /*Footer Styling*/
