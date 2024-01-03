@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html class="theme-light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edwin Tang | World of Chel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="portfolio-styles.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="javascript.js"></script> 
+        <ul class="navbar">
+            <div class="navbar-menu">
+                <a href="index.html"><li class="navbar-item">RETURN TO WORK</li></a>
+                <li class="navbar-arrow"><img src="Assets/breadcrumb-arrow.png"></li>
+                <li class="navbar-item active">WORLD OF CHEL</li>    
+            </div>
+            <div class="color-change">
+                <button class="color-change-icon" onclick="setDarkTheme()" id="dark-icon"></button>
+                <button class="color-change-icon" onclick="setLightTheme()" id="light-icon"></button>
+            </div>
+        </ul>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="project-image">
+            <img src="Assets/Project Thumbnails/NHL - WOC Large Thumbnail.png" class="project-thumbnails">
+        </div>
+
+        <div class="project-intro">
+            <span class="wide-text">WORLD OF CHEL</span>
+            <p>
+                World of Chel (WOC) is a game mode within NHL 22 that has the highest volume of users. The mode promotes social gameplay and focuses on playing with friends and competing online with others. Since the introduction of the mode in 2019, the core experience within the WOC UI provided users with a functional, but tedious experience, with long load times, and a large number of layers for the user to navigate in and out of. This revamped design introduces a non-linear experience to allow users more freedom of navigation and reduce the number of layers and time required to get to the most important experience, gameplay.
+            </p>
+            <p>
+                In this project, I was responsible for user research, creating a proposal and design concept to pitch the project to Leadership. After approval, I worked alongside 2 game producers to refine wireframes for handoff.
+            </p>
+            <p>
+                <div class="two-column-row">
+                    <div class="column">
+                        <img src="Assets/world of chel/old-woc.png">
+                    </div>
+                    <div class="column">
+                        <img src="Assets/world of chel/new-woc.jpg">
+                    </div>
+                </div>
+            </p>
+
+        </div>
+        <br />
+        <div class="project-body">
+            <span class="project-subheader">Community Research and Pain Points</span>
+            <p>
+                Using the feedback found on EAs online forums, the EA NHL related subreddits and previous EA Sports UX research efforts, I found that some key common user frustrations were:
+            </p>
+            <ul>
+                <li>Getting to gameplay takes too long, taking ~10+ inputs, with delays and loading screens between many of these inputs.</li>
+                <li>Creating lobbies and inviting a group of friends to play with is a cumbersome experience and discouraging</li>
+                <li>Gameplay is well received, and players enjoy the WOC mode overall, but the surrounding experience is poor.</li>
+            </ul>
+            <p>
+                I took a look at how other popular titles, both in sports and non-sports titles, were allowing users to remain engaged and stay excited between gameplay. I looked at a number of multiplayer titles, including Apex Legends, FIFA, Fortnite, Call of Duty, NBA Live and Overwatch. In comparison to these games, World of Chel users took <strong>significantly longer to get to matchmaking and gameplay.</strong>
+            </p>
+            <img src="Assets/world of chel/Data Comparison.png">
+            <p>
+                Through this analysis, we set up 2 opportunities to address in order to improve the overall experience within this mode. Prioritizing matchmaking through nonlinear experiences, and improving perceived performance through flow and interaction changes.
+            </p>
+            <br />
+            <p><span class="project-subheader">Nonlinear Navigation</span></p>
+            <p>
+                Successful games have fluid experiences that prioritize matchmaking before all else. Games like FIFA and Call of Duty allow the player to begin searching for a match within a single button press, while WOC requires 6 interactions for the same task.
+                This is further amplified if our WoC user wants to do any additional tasks prior to entering a match. If a WOC user wants to customize their avatar or loadout before a game, it would take a minimum of 9 steps to matchmaking, while other games like Call of Duty take 3 steps before the user is able to matchmake.
+            </p>
+            <img src="Assets/world of chel/steps taken to matchmaking.png">
+            <p>
+                The reason for this is because CoD users can do extraneous tasks from any point in the flow - while WoC players need to progress through a linear path before ending their flow with matchmaking.
+            </p>
+            <p>
+                By introducing a non-linear experience to our game, we allow the player to have a more fluid approach to matchmaking, and begin searching for a match while <strong>simultaneously performing other tasks within the menus,</strong> like customizing their player loadouts and gear. 
+            </p>
+            <p>
+                Non-linearity also improves the social experience of the game; a common user frustration was that inviting friends to lobbies was cumbersome and often time consuming. Using a non-linear experience allows the user to invite their friends to their in-game lobbies and <strong>explore other areas of the mode while waiting for friends to join in.</strong>
+            </p>
+
+            <p><span class="project-subheader">Microinteractions</span></p>
+            <p>
+                Providing users with small, but impactful microinteractions also aids in reducing the amount of time and steps taken to get to gameplay. By introducing the following tweaks, we were able to cut down on the amount of actions required to complete tasks that are directly related to the core loop of World of Chel:
+                <ul>
+                    <li>Removing the need to hit 'Play' before selecting a game mode, and providing the game modes available for selection as soon as WOC loads</li>
+                    <li>Automatically defaulting to the last used loadout instead of requiring a selection before beginning matchmaking</li>
+                    <li>Moving the party creation flow to the WOC menus and allowing users to invite friends to their party before a game mode is selected to minimize the amount of idle time waiting in game lobbies</li>
+                    <li>Allowing users change migrate modes with their party, instead of requiring users to re-invite their friends between different game modes</li>
+                </ul> 
+            </p>
+            <p>
+                <div class="two-column-row">
+                    <div class="column">
+                        <img src="Assets/placeholder.png">
+                    </div>
+                    <div class="column">
+                        <img src="Assets/placeholder.png">
+                    </div>
+                </div>
+            </p>
+        </div>
+
+
+        <div class="two-column-row">
+            <div class="column">
+                <img src="Assets/placeholder.png">
+            </div>
+            <div class="column">
+                <img src="Assets/placeholder.png">
+            </div>
+        </div>
+
+        <div class="footer" id="social">
+            <div class="footer-text-container">
+                <span id="footer-text">Thanks for visiting.</span>
+                <a href="#" id="back-to-top">RETURN TO TOP</a>
+            </div>
+            <div class="social-icons"><img class="footer-social-icons" src="Assets/social-icons/ig-icon.png" href=""><img class="footer-social-icons" src="Assets/social-icons/linkedin-icon.png" href=""></div>
+        </div>
+    </body>
+</html>
