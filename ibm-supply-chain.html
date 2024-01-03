@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html class="theme-light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edwin Tang | IBM Supply Chain</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="portfolio-styles.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="javascript.js"></script> 
+        <ul class="navbar">
+            <div class="navbar-menu">
+                <a href="index.html"><li class="navbar-item">RETURN TO WORK</li></a>
+                <li class="navbar-arrow"><img src="Assets/breadcrumb-arrow.png"></li>
+                <li class="navbar-item active">IBM SUPPLY CHAIN</li>    
+            </div>
+            <div class="color-change">
+                <button class="color-change-icon" onclick="setDarkTheme()" id="dark-icon"></button>
+                <button class="color-change-icon" onclick="setLightTheme()" id="light-icon"></button>
+            </div>
+        </ul>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="project-image">
+            <img src="Assets/Project Thumbnails/IBM Customer Center Large Thumbnail.png" class="project-thumbnails">
+        </div>
+
+        <div class="project-intro">
+            <span class="wide-text">IBM Sterling Supply Chain Business Network</span>
+            <p>
+                IBM Supply Chain Business Network (SCBN) is a cloud-based suite of products used to streamline supply chain connectivity and expand B2B transaction visibility to help predict, assess and mitigate disruptions. I was responsible for redesigning the Customer Center experience, the launchpad and maintenance hub of this product suite, as the sole designer in the early stages of this project. As a solo designer, I was responsible for the initial research, identifying the as-is flow, identifying common frustrations with the user experience, implementing the solutions into a redesigned interface and prototyping for a proof of concept. 
+            </p>
+            <p>
+                The work that I had completed was used as a demo to the Senior Vice President and Vice President of design of the Cognitive Applications business unit to be approved for funding and development. After funding approval, I worked as a product designer alongside a team of 5 other UX designers and 1 content designer, to continue to iterate and ship the project for development in a 6 month timeframe.
+            </p>
+            <p>
+                <img src="Assets/ibm-supply chain/Legacy CC.png">
+                <p class="image-footer">Legacy Customer Center interface. Click to expand image</p>
+            </p>
+        </div>
+        <br />
+        <div class="project-body">
+            <span class="project-subheader">Identifying Users</span>
+            <p>
+                To begin the redesign, I first needed to understand the types of tasks and use cases that our users go through. I began by speaking with the project managers and existing development managers involved in the current product. Speaking with those stakeholders allowed me to understand their perspective of the users, their painpoints and their needs. Insights that I gained from those conversations were things like:            
+            </p>
+            <ul>
+                <li>Complaints and features most requested by users</li>
+                <li>Common tasks and general workflows</li>
+                <li>Core features and functionality that need to retain similar patterns</li>
+            </ul>
+            <p>
+                I also had the opportunity to speak to both internal support users and external customers that were willing and eager to speak with us and provide feedback throughout the duration of the redesign. Using Cisco WebEx, a web conferencing application, users were able to share their workflow and everyday tasks through screen sharing. There were a number of different types of users that we had interviewed: 
+            </p>
+            <p>
+                <span style="font-weight: 700;">IBM Support Administrators</span>
+                <ul>
+                    <li>Highly technical</li>
+                    <li>Have ability to grant application access to users</li>
+                    <li>Rarely the first point of contact for customers</li>
+                </ul>
+            </p>
+            <p>
+                <span style="font-weight: 700;">IBM Support Users</span>
+                <ul>
+                    <li>Assist users in everyday tasks, like modifying trading partners and company configurations</li>
+                    <li>First point of contact in customer support</li>
+                </ul>
+            </p>
+            <p>
+                <span style="font-weight: 700;">Company Administrators</span>
+                <ul>
+                    <li>Technical, but not to the extent of Support admins</li>
+                    <li>Can modify trading partner and document configurations</li>
+                    <li>Limited amount of company administrators in a company</li>
+                </ul>
+            </p>
+            <p>
+                <span style="font-weight: 700;">Company Users</span>
+                <ul>
+                    <li>Usually not very technical</li>
+                    <li>Read only access to most features</li>
+                    <li>Most common user type</li>
+                </ul>
+            </p>
+            <p>
+                Users were able to voice their complaints and frustrations with the product, and by watching their workflow, we were able to gain insights on the pain points that users have adapted to. Some examples of the questions and insights that we gathered are the following:
+            </p>
+            <p>
+                <span style="font-weight: 700;">Questions</span>
+                <ul>
+                    <li>What are the common fields you use/reference when accomplishing your task?</li>
+                    <li>Do you normally enter your own company information in this field?</li>
+                    <li>When you receive this form, how often and why do you reach back out to customers?</li>
+                </ul>
+            </p>
+            <p>
+                <span style="font-weight: 700;">Observed Feedback</span>
+                <ul>
+                    <li>Manually filling in the same company information repeatedly</li>
+                    <li>Ignoring fields that the user has trouble understanding and describing what they want in the 'Additional comments' field</li>
+                    <li>Support users reaching out to customers to clarify incorrectly submitted forms</li>
+                </ul>
+            </p>
+            <p>Those are examples of the insights that we found during user research sessions for the form below for ordering a mailbox or mailslot.</p>
+            <img src="Assets/ibm-supply chain/Mailbox User Feedback.png">
+            <p class="image-footer">Notes taken after observing different users perform their daily tasks</p>
+            
+            <br />
+            <p><span class="project-subheader">Simplifying Forms</span></p>
+            <p>
+                We made sure to take advantage of redesign opportunities that didn't require large development overhauls. Tasks that were meant to be simple were requiring a lot of time and resources from the IBM Support team, due to the poor as-is experience. Forms were restructured and simplified to reduce confusion. Like previously mentioned, by speaking to internal and external users and observing their tasks, we found that:
+            </p>
+            <p>
+                <ul>
+                    <li>Required fields were left empty, resulting in Support contacting users to resolve the issue</li>
+                    <li>Optional fields were filled with irrelevant information, requiring clarification from Support</li>
+                    <li>Users would ignore fields due to confusion and detail their needs in the 'Additional comments' field</li>
+                </ul>
+            </p>
+           
+            <p><span style="font-weight: 700;">Form Length</span></p>
+            <p>
+                To begin simplifying the form, we identified the required fields, deprecated fields and how each field is being used. We found that by having too many fields, users would feel overwhelmed and feel the need to fill in every single field, even if it meant including irrelevant information. We had to find the proper balance of simplicity and usability, making sure to cover the most common use cases, if we removed commonly used fields, we could be generating more Support tickets rather than improving the experience. For example, we found that the EDI ID/Qualifier fields were often filled with 1 relevant field and other random ID's in the excess fields; in this case, we chose to use a single EDI ID/Qualifier field.            
+            </p>
+            <img src="Assets/ibm-supply chain/Simplifying Forms.png">
+            <p class="image-footer">Iterations to continuously reduce the length of the forms (oldest to newest)</p>
+            
+            <p><span style="font-weight: 700;">Removing Redundancy</span></p>
+            <p>
+                Speaking with users, we found that there were almost no use cases where users would enter different company information other than their own. To reduce the redundancy of entering the same company information in subsequent forms, we chose to default the users company address, using the address listed in their company user account information. By replacing those fields with the address text, instead of removing the fields completely, we are able to further shorten the form length and reduce possibility of error, while allowing the user to verify their address.
+            </p>
+            <img src="Assets/ibm-supply chain/Form Length.png">
+            <p class="image-footer">Removing unnecessary and repetitive fields allowed us to shrink the form length dramatically</p>
+
+            
+            <p><span style="font-weight: 700;">Error Checking</span></p>
+            <p>
+                Following modern form submissions patterns, we introduced error checking to required fields. IBM Support users had come across experiences where forms were left empty, with the user request detailed in the 'Additional comments' field instead. By introducing error checking, we are avoiding this scenario, as well as removing the possibility of the user accidentally skipping fields.            
+            </p>
+            <img src="Assets/ibm-supply chain/Removing Redundancy.png">
+            <p class="image-footer">Error messaging if a user accidentally missed a field</p>
+            
+            <p><span style="font-weight: 700;">Content design, messaging and form structure</span></p>
+            <p>
+                Much of the messaging within Customer Center used technical jargon that alienates less experienced users. By simplifying the content design and introducing help tooltips, we reduce the possibility of the user contacting Support due to lack of direction. Structuring the form into logical chunks helps align the user to the purpose of each chunk. For example, the section 'Customer Accessing New Mailbox or Mailslot' has been renamed to 'Trading partner/third party information' and by sectioning out the form chunks into 'User information' and 'Third party information', users can avoid filling in the wrong party's information.           
+            </p>
+            <img src="Assets/ibm-supply chain/Content Design.png">
+            <p class="image-footer">Simplifying the language used to make the forms more approachable</p>
+
+            <br />
+
+            <p><span class="project-subheader">Search Pages</span></p>
+            <p>
+                Customer Center contains multiple search functions for different use cases. They all follow a similar pattern, so revamping the search screen interactions was a high impact decision, able to improve the experience of multiple user flows at once. Key insights that drove our decision making on this screen were:                
+                <ul>
+                    <li>Users only search by 1 or 2 fields at most</li>
+                    <li>Page load times can be very long for many results</li>
+                    <li>Search methods are technical and outdated</li>
+                </ul> 
+            </p>
+
+            <p><span style="font-weight: 700;">Aligning to modern expectations</span></p>
+            <p>
+                In the legacy product, users are presented with multiple input fields for different search categories. It isn't clear to users what type of search is being conducted (equals, contains, starts with, ends with), and if users choose to search with multiple fields, it isn't clear how the search incorporates the extra terms (AND/OR). By following modern search standards, like Google search, we chose to move to a single inclusive searchbar. Using a single searchbar allows for us to follow user expectations that the following search will be conducted by keyword, and is inclusive of any search terms entered.            
+            </p>
+            <img src="Assets/ibm-supply chain/Simplified Search.png">
+            <p class="image-footer">Simplifying search bar to feel more like modern search engines</p>
+
+            <p><span style="font-weight: 700;">Performance</span></p>
+            <p>
+                Conducting searches that return a large number of results would previously return all the results in a single long table. Aside from the overwhelming amount of results returned, page load times between large searches could potentially anywhere between 30 seconds, to over a minute. Using pagination to chunk search results into smaller portions, load times can be decreased by calling for multiple small results, instead of calling for one very large result. By implementing pagination, we were able to pre-populate the table prior to any search terms being entered, allowing for users to browse and explore their lists.             
+            </p>
+            <img src="Assets/ibm-supply chain/Search Performance.png">
+            <p class="image-footer">Chunking results to improve search and loading performance</p>
+
+            <br />
+            <p>
+                <p><span class="project-subheader">Migrating Users</span></p>
+                <p>
+                    Previous product redesigns efforts have often been met with negative feedback in Net Promoter Scores (NPS). The most common issues in the provided feedback were the perceived loss of functionality (due to existing features hidden behind other layers), actual loss of functionality and difficulty finding core features due to a more minimal interface. Users wanted to make sure that the functions that they needed were just as available in the redesign, as they were in the legacy product, without spending a lot of time to figure out where to find different features. To ease users into the experience, we created a migration process; once user accounts had been marked to transition to the new experience, they would have 30 days to be able to read and preview the new design, and have full control within the 30 day period to move to the new experience when comfortable.
+                </p>
+                <img src="Assets/ibm-supply chain/User Migration Flowchart.png">
+                <p class="image-footer">Flowchart of the user migration journey</p>
+                <img src="Assets/ibm-supply chain/Transition Prompt Explorations.png">
+                <p class="image-footer">Exploratory iterations of the migration flow</p>
+
+                <p><span style="font-weight: 700;">Call to Actions</span></p>
+                <p>
+                    We explored different opportunities for the user to accept or temporarily decline the migration to the new experience. Initially, the call to action was a single 'Visit the new experience' button, and users would need to contact IBM Support in order to delay their migration past a 14 day period. That evolved to a two button interaction and the extension of the 14 day period to 30 days. This allowed for us to avoid 'locking in' the user into the migration and provide them plenty of time to migrate when comfortable. We decided to add modals to each button interaction, to both, comfort the user that they will not be automatically migrated without being reminded first and also to allow a way out if they were ready to migrate, but changed their minds.                
+                </p>
+                <img src="Assets/ibm-supply chain/CTA Buttons.png">
+                <p class="image-footer">Call to Action iterations</p>
+
+                <p><span style="font-weight: 700;">Messaging and Content Design</span></p>
+                <p>
+                    In order to allow the users to familiarize themselves with the new experience, we needed a method of previewing the redesign. Unfortunately, due to development limitations, we weren't able to allow trial periods, so we needed to find a different solution. We explored different methods and content to inform the user of the new features, but wanted to reassure them that it would be a quick process, and they wouldn't lose any functionality. Different methods that were explored include an animated video, brief single page and in-depth multi page descriptions. Ultimately, we chose to use a 4 panel carousel, providing brief descriptions of what's to come, as well as easy entry to an FAQ page to address any questions the user may have about their workflow, the migration process, or their data.                
+                </p>
+                <img src="Assets/ibm-supply chain/Migration Messaging and CD.png">
+                <p class="image-footer">Exploring different copywriting to inform users of their migration date and experience</p>
+
+                <p><span style="font-weight: 700;">Walkthrough Experience</span></p>
+                <p>
+                    Once the user has decided that they are ready to migrate, we had to decide where to lead them next. Initially, once the user had clicked migrate, they would immediately be taken to the new experience and begin their workflow. In order to make the transition as easy as possible, we decided to create a multi-step walkthrough to lead users into the updated experience, assuring users that we aren't leaving them behind.                
+                </p>
+                <img src="Assets/ibm-supply chain/Walkthrough GIF.gif">
+                <p class="image-footer">Final migration walkthrough experience</p>
+
+                <br />
+                <p><span class="project-subheader">Reflection</span></p>
+                <p>
+                    Due to the large scope of the project and short timeframe, we had to take advantage of any easy wins that we could find. Low cost design decisions that can improve the experience are your best friend; developers and project managers love them too! Redesigns don't need to reinvent the wheel for every decision and that's okay. For example, revamping the forms by identifying and removing unnecessary fields requires low development effort and a greatly improved experience for users.                
+                </p>
+                <p>
+                    Our team for this project was scattered throughout different locations. Being able to share thoughts, sketches and low-fi designs was the key to our success. Work doesn't have to be complete (or anywhere close to) before you can start showing development; discussing early ideas helped our developers start building out their back end to fit our needs. Communicating and sharing work on a weekly basis allowed for design and development to be on the same page and bring each other up to speed, so neither were hit with unexpected surprises. 
+                </p>
+            </p>
+
+                <!----
+                <div class="two-column-row">
+                    <div class="column">
+                        <img src="Assets/placeholder.png">
+                    </div>
+                    <div class="column">
+                        <img src="Assets/placeholder.png">
+                    </div>
+                </div>
+            </p>
+        </div>
+
+
+        <div class="two-column-row">
+            <div class="column">
+                <img src="Assets/placeholder.png">
+            </div>
+            <div class="column">
+                <img src="Assets/placeholder.png">
+            </div>
+        </div>
+    -->
+
+        <div class="footer" id="social">
+            <div class="footer-text-container">
+                <span id="footer-text">Thanks for reading.</span>
+                <a href="index.html#projects" id="back-to-top">RETURN TO WORK</a>
+            </div>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/ewkthanks/"><img class="footer-social-icons" src="Assets/social-icons/ig-icon.png"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/edwin-tang-b3b649b4/"><img class="footer-social-icons" src="Assets/social-icons/linkedin-icon.png"></a>
+            </div>
+        </div>
+    </body>
+</html>

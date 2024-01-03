@@ -19,6 +19,7 @@
     --footer-color: #333;
     --navhover-bg-color: #222;
     --navhover-color: #fff;
+    --links-color: #0C43A8;
 }
 
 .theme-dark {
@@ -27,6 +28,7 @@
     --footer-color: #cbcbcb;
     --navhover-bg-color: #fff;
     --navhover-color: #222;
+    --links-color: #7BA7F8;
 }
 
 html {
@@ -34,7 +36,8 @@ html {
 }
 
 .hyperlinks {
-    
+    font-weight: 700;
+    color: var(--links-color);
 }
 
 /*Navbar Styling*/
@@ -192,19 +195,19 @@ ul li:not(:last-child) {
 }
 
 #easports {
-    color: #0C43A8;
+    color: var(--links-color);
     font-weight: 700;   
 }
 
 #resume {
-    color: #0C43A8;
+    color: var(--links-color);
     font-weight: 700;
     font-size: 16px;
     margin-right: 32px;
 }
 
 #linkedin {
-    color: #0C43A8;
+    color: var(--links-color);
     font-weight: 700;
     font-size: 16px;
 }
@@ -304,13 +307,16 @@ ul li:not(:last-child) {
 }
 
 #back-to-top {
-    color: var(--Secondary---V1, #0C43A8);
+    color: var(--links-color);
     font-family: IBM Plex Sans Condensed;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration-line: underline;
+    align-items: center;
+    display: flex;
+    margin: auto;
 }
 
 .social-icons {
@@ -327,7 +333,7 @@ ul li:not(:last-child) {
 
 /*PROJECT PAGE CSS*/
 .project-image {
-    margin-top: 117px;
+    margin-top: 130px;
     max-width: 1528px;
     margin-left: auto;
     margin-right: auto;
@@ -346,6 +352,13 @@ ul li:not(:last-child) {
     padding: 0px 48px;
 }
 
+.project-intro img {
+    max-width: 1528px;
+    width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
 .image-footer {
     font-size: 16px;
     color: var(--footer-color);
@@ -355,7 +368,9 @@ ul li:not(:last-child) {
 
 .project-body {
     padding: 0px 48px;
-    max-wdith: 1528px;
+    max-width: 1528px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-body img {
