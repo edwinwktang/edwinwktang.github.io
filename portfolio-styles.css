@@ -1,12 +1,22 @@
 @font-face {
     font-family: 'Druk Wide';
     src: url(/fonts/Druk-Wide-Heavy.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url(/fonts/Druk-Wide-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*Theme Setup*/
 .theme-light {
     --background-color: #fff;
     --font-color: #222;
+    --footer-color: #333;
     --navhover-bg-color: #222;
     --navhover-color: #fff;
 }
@@ -14,12 +24,17 @@
 .theme-dark {
     --background-color: #222222;
     --font-color: #fff;
+    --footer-color: #cbcbcb;
     --navhover-bg-color: #fff;
     --navhover-color: #222;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.hyperlinks {
+    
 }
 
 /*Navbar Styling*/
@@ -171,6 +186,7 @@ ul li:not(:last-child) {
 
 #header {
     font-family: 'Druk Wide';
+    font-weight: bold;
     font-size: 30px;
     
 }
@@ -219,7 +235,8 @@ ul li:not(:last-child) {
 }
 
 .wide-text {
-    font-family: Druk Wide;
+    font-family: 'Druk Wide';
+    font-weight: bold;
     font-size: 30px;
     color: var(--font-color);
     
@@ -279,10 +296,10 @@ ul li:not(:last-child) {
 
 #footer-text {
     color: var(--font-color);
-    font-family: Druk Wide;
+    font-family: 'Druk Wide';
+    font-weight: normal;
     font-size: 20px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
 }
 
@@ -329,6 +346,13 @@ ul li:not(:last-child) {
     padding: 0px 48px;
 }
 
+.image-footer {
+    font-size: 16px;
+    color: var(--footer-color);
+    margin-top: 0%;
+    font-style: italic;
+}
+
 .project-body {
     padding: 0px 48px;
     max-wdith: 1528px;
@@ -340,7 +364,7 @@ ul li:not(:last-child) {
 }
 
 .project-subheader {
-    font-family: Druk Wide;
+    font-family: 'Druk Wide';
     font-size: 24px;
     color: var(--font-color);
     

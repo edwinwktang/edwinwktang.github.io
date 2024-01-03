@@ -3,28 +3,28 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html class="theme-light">
+<html class="theme-dark">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Edwin Tang | Product Design</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="portfolio-styles.css">
+        <link rel="stylesheet" href="portfolio-styles.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="javascript.js"></script> 
         <ul class="navbar">
-            <span class="navbar-menu">
+            <div class="navbar-menu">
                 <li class="navbar-item"><a href="#about">ABOUT</a></li>
                 <li class="navbar-item"><a href="#projects">PROJECTS</a></li>
                 <li class="navbar-item"><a href="#social">SOCIAL</a></li>
-            </span>
-            <span class="color-change">
-                <span class="color-change-icon" id="dark-icon"></span>
-                <span class="color-change-icon" id="light-icon"></span>
-            </span>
+            </div>
+            <div class="color-change">
+                <button class="color-change-icon" onclick="setDarkTheme()" id="dark-icon"></button>
+                <button class="color-change-icon" onclick="setLightTheme()" id="light-icon"></button>
+            </div>
         </ul>
     </head>
     <body>
@@ -63,8 +63,8 @@
                 <a href="#" id="back-to-top">RETURN TO TOP</a>
             </div>
             <div class="social-icons">
-                <a href="https://www.instagram.com/ewkthanks/"><img class="footer-social-icons" src="Assets/social-icons/ig-icon.png"></a>
-                <a href="https://www.linkedin.com/in/edwin-tang-b3b649b4/"><img class="footer-social-icons" src="Assets/social-icons/linkedin-icon.png"></a>
+                <a target="_blank" href="https://www.instagram.com/ewkthanks/"><img class="footer-social-icons" src="Assets/social-icons/ig-icon.png"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/edwin-tang-b3b649b4/"><img class="footer-social-icons" src="Assets/social-icons/linkedin-icon.png"></a>
             </div>
         </div>
         <script src="" async defer></script>
