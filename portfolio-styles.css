@@ -276,18 +276,56 @@ ul li:not(:last-child) {
     
 }
 
-.project-filter li {
-    display: inline;
-    padding: 0px 15px 0px 15px;
-    border-radius: 4px;
-}
-
+/*
 .project-filter li:hover {
     background-color: var(--navhover-bg-color);
     color: var(--navhover-color);
     -webkit-transition: all 150ms ease-in-out;
     -moz-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
+}
+*/
+.project-filter .filter-button {
+    background-color: var(--background-color);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    border: none;
+    padding: 8px 15px 8px 15px;
+    border-radius: 4px;
+}
+
+.project-filter .filter-button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.project-filter .filter-button:hover {
+    background-color: var(--navhover-bg-color);
+    color: var(--navhover-color);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.project-filter .filter-button.filter-active {
+    background-color: var(--navhover-bg-color);
+    color: var(--navhover-color);
+}
+
+.project-filter .filter-button:not(hover) {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.project-filter-link {
+    display: none;
+}
+
+.project-filter-show {
+    display: block;
 }
 
 .project-thumbnails-container {

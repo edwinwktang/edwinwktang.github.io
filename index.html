@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html class="theme-dark">
+<html class="theme-light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,24 +38,24 @@
                 <p id="hero-subheader">Product designer based in Vancouver, BC. Currently creating next gen gaming experiences with <a href="https://www.instagram.com/easportsnhl/?hl=en" target="_blank" id="easports">@EASPORTSNHL.</a></p>
                 <p>In my spare time, I am a die-hard Toronto Raptors fan, video game addict and self proclaimed coffee snob.</p> 
                 <p>Find me off hours on Valorant, NBA2k, or COD Warzone.</p>
-                <p id="intro-links"><a href="" id="resume">RESUME</a><a href="" id="linkedin">LINKEDIN</a></p>
+                <p id="intro-links"><a href="Assets/EdwinResume.pdf" target="_blank" id="resume">RESUME</a><a href="https://www.linkedin.com/in/edwin-tang-b3b649b4/" id="linkedin">LINKEDIN</a></p>
             </div>
         </div>
 
         <div class="projects" id="projects">
             <div class="projects-header">
                 <span class="wide-text">Work</span>
-                <div class="project-filter">
-                    <li>ALL</li>
-                    <li>EASPORTS NHL</li>
-                    <li>IBM</li>
+                <div class="project-filter" id="btnContainer">
+                    <button class="filter-button filter-active" onclick="filterSelection('all')">ALL WORK</button>
+                    <button class="filter-button" onclick="filterSelection('eanhl')">EASPORTS NHL
+                    <button class="filter-button" onclick="filterSelection('ibm')">IBM</button>
                 </div>
             </div>
             <div class="project-thumbnails-container">
-                <img src="Assets/Project Thumbnails/NHL - Strategies Large Thumbnail.png" href="" class="project-thumbnails">
-                <a href="world-of-chel.html"><img src="Assets/Project Thumbnails/NHL - WOC Large Thumbnail.png" class="project-thumbnails"></a>
-                <a href="ibm-supply-chain.html"><img src="Assets/Project Thumbnails/IBM Customer Center Large Thumbnail.png" alt="IBM Supply Chain Project Thumbnail" class="project-thumbnails"></a>
-                <a href="ibm-watson-physio.html"><img src="Assets/Project Thumbnails/IBM Watson for Physio Large Thumbnail.png" alt="IBM Watson for Physio Project Thumbnail" class="project-thumbnails"></a>
+                <a href="" class="project-filter-link eanhl"><img src="Assets/Project Thumbnails/NHL - Strategies Large Thumbnail.png" class="project-thumbnails"></a>
+                <a href="world-of-chel.html" class="project-filter-link eanhl"><img src="Assets/Project Thumbnails/NHL - WOC Large Thumbnail.png" class="project-thumbnails"></a>
+                <a href="ibm-supply-chain.html" class="project-filter-link ibm"><img src="Assets/Project Thumbnails/IBM Customer Center Large Thumbnail.png" alt="IBM Supply Chain Project Thumbnail" class="project-thumbnails"></a>
+                <a href="ibm-watson-physio.html" class="project-filter-link ibm"><img src="Assets/Project Thumbnails/IBM Watson for Physio Large Thumbnail.png" alt="IBM Watson for Physio Project Thumbnail" class="project-thumbnails"></a>
             </div>
         </div> 
          
@@ -69,6 +69,19 @@
                 <a target="_blank" href="https://www.linkedin.com/in/edwin-tang-b3b649b4/"><img class="footer-social-icons" src="Assets/social-icons/linkedin-icon.png"></a>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script>
+        filterSelection("all")
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("btnContainer");
+        var btns = btnContainer.getElementsByClassName("filter-button");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("filter-active");
+            current[0].className = current[0].className.replace(" filter-active", "");
+            this.className += " filter-active";
+        });
+        };
+
+        </script>
     </body>
 </html> 
