@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     src: url(/fonts/Druk-Wide-Heavy.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     src: url(/fonts/Druk-Wide-Medium.ttf);
     font-weight: normal;
     font-style: normal;
@@ -78,7 +78,7 @@ html {
 }
 
 .navbar-item a {
-    padding: 2px 17px 2px 17px;
+    padding: 4px 17px 4px 17px;
 }
 
 .navbar-arrow {
@@ -211,7 +211,7 @@ ul li:not(:last-child) {
 }
 
 #header {
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     font-weight: bold;
     font-size: 30px;
     
@@ -261,7 +261,7 @@ ul li:not(:last-child) {
 }
 
 .wide-text {
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     font-weight: bold;
     font-size: 30px;
     color: var(--font-color);
@@ -381,7 +381,7 @@ ul li:not(:last-child) {
 
 #footer-text {
     color: var(--font-color);
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     font-weight: normal;
     font-size: 20px;
     font-style: normal;
@@ -460,8 +460,13 @@ ul li:not(:last-child) {
     border-radius: 4px;
 }
 
+video {
+    width: 100%;
+    border-radius: 4px;
+}
+
 .project-subheader {
-    font-family: 'Druk Wide';
+    font-family: 'Druk-Wide';
     font-size: 24px;
     color: var(--font-color);
     
