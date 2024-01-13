@@ -17,6 +17,10 @@
         display: block;
     }
 
+    .desktop-thumbnails:not(last-child) {
+        padding-bottom: 8px;
+    }
+
     .mobile-thumbnails {
         display: none;
     }
