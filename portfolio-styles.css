@@ -12,6 +12,16 @@
     font-style: normal;
 }
 
+@media only screen and (min-width: 571px) {
+    .desktop-thumbnails {
+        display: block;
+    }
+
+    .mobile-thumbnails {
+        display: none;
+    }
+}
+
 /*Theme Setup*/
 .theme-light {
     --background-color: #fff;
@@ -496,7 +506,7 @@ ul li:not(:last-child) {
         border-radius: 4px;
     }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 570px) {
     html {
         max-width: 100vw;
         overflow-x: hidden;
@@ -505,6 +515,19 @@ ul li:not(:last-child) {
     body {
         max-width: 100vw;
         overflow-x: hidden; 
+    }
+
+    .mobile-thumbnails {
+        display: block;
+
+    }
+
+    .mobile-thumbnails:not(last-child) {
+        padding-bottom: 8px;
+    }
+
+    .desktop-thumbnails {
+        display: none;
     }
 
     .navbar {
